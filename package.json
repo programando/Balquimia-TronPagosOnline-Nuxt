@@ -1,0 +1,26 @@
+{
+  "name": "Balquimia-TronPagosOnline-Nuxt-V.2.14.Abr2021",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "nuxt",
+    "build": "nuxt build",
+    "start": "nuxt start",
+    "generate": "nuxt generate"
+  },
+  "dependencies": {
+    "@nuxtjs/axios": "^5.13.1",
+    "@nuxtjs/dotenv": "^1.4.1",
+    "core-js": "^3.9.1",
+    "md5": "^2.3.0",
+    "nuxt": "^2.15.3",
+    "vue-sweetalert2": "^4.3.1"
+  },
+  "devDependencies": {
+    "@nuxtjs/tailwindcss": "^4.0.3",
+    "@tailwindcss/postcss7-compat": "^2.1.0",
+    "autoprefixer": "^9.8.6",
+    "postcss": "^7.0.35",
+    "tailwindcss": "npm:@tailwindcss/postcss7-compat@^2.1.0"
+  }
+}
