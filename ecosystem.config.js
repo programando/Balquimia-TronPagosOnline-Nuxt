@@ -9,3 +9,22 @@ module.exports = {
     }
   ]
 }
+
+
+/*
+
+module.exports = {
+  apps: [{
+    name: "Internal API",
+    script: "./internal_api/bundle.js",
+    watch: true,
+    kill_timeout: 10000,
+    wait_ready: true,
+    env_production: {
+      NODE_ENV: "production",
+      NODE_CONFIG_DIR: "./config"
+    },
+  }],
+};
+
+*/
