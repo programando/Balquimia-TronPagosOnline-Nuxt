@@ -82,6 +82,7 @@ export default {
               nom_full:'',
               email:'',
               valor_pagar:'',
+              num_fact:''
                
           },
         pinError: '',
@@ -106,7 +107,7 @@ export default {
                   this.formUser.nom_full    = Data.nom_full;
                   this.formUser.email       = Data.email;
                   this.formUser.valor_pagar = this.formatNumber( Data.valor_pagar);
-                   
+                  this.formUser.num_fact = this.num_fact;
                   // alternar el valor de los botones
                   this.mostrarBuscar = false;
                   
