@@ -82,7 +82,7 @@ export default {
               nom_full:'',
               email:'',
               valor_pagar:'',
-              referenceCode='',
+              referenceCode:'',
           },
         pinError: '',
         mostrarBuscar: true,
