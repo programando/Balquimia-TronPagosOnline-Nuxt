@@ -11,7 +11,7 @@
             document.getElementById('description').value   = keyField;
             document.getElementById('payerDocument').value = form.nro_identif.trim();
             document.getElementById('payerFullName').value = form.nom_full.trim();
-            document.getElementById('referenceCode').value = form.num_fact;
+            document.getElementById('referenceCode').value = form.nro_identif.trim();
             document.getElementById('signature').value     = md5Key;
             document.psePayForm.submit();     
         },
