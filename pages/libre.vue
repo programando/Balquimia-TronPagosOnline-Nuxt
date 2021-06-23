@@ -8,7 +8,7 @@
         <div
           class="pb-4 text-lg sm:text-xl lg:text-2xl text-primary "
         >
-          <h1 class="text-center">Pago de Libre Registro</h1>
+          <h1 class="text-center">Pago de Libre Registro.</h1>
         </div>
         <div class="grid mx-4 sm:grid-cols-2">
           <label class="flex justify-center md:justify-start md:ml-4 lg:text-lg">(*) Identificación :</label>
