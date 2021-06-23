@@ -93,6 +93,7 @@ export default {
             nom_full:'',
             email:'',
             valor_pagar:'',
+            referenceCode:'',
         },
   }),
     methods: {
@@ -107,11 +108,13 @@ export default {
 
          signatureMD5( ) {
             let valorPIN = parseInt(this.formUser.valor_pagar.replace(/\./g, '') ) ;
-            let signature = process.env.SIGNATURE + this.formUser.nro_identif +"~" + valorPIN+  "~COP"; 
+            let signature = process.env.SIGNATURE + this.formUser.referenceCode +"~" + valorPIN+  "~COP"; 
             return md5( signature);         
           },
 
              dataValidation() {
+               this.formUser.referenceCode = Math.floor(Math.random() * (100000 - 1000 + 1)) + 1000;
+               console.log( this.formUser.referenceCode);
                this.formUser.nom_full = this.formUser.nom_full.replace(/[^a-zA-Z ]/g, " ")
                let getError = this.formValidate ( this.formUser, this.formUser.nro_identif);
               return getError;

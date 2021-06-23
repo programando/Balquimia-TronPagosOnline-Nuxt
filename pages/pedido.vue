@@ -81,6 +81,7 @@ export default {
               nom_full:'',
               email:'',
               valor_pagar:'',
+              referenceCode:'',
           },
         pinError: '',
 
@@ -106,7 +107,7 @@ export default {
                   this.formUser.nom_full    = Data.nom_full;
                   this.formUser.email       = Data.email;
                   this.formUser.valor_pagar = this.formatNumber( Data.valor_pagar);
-
+                  this.formUser.referenceCode = this.id_ped;
 
                   // alternar el valor de los botones
                   this.mostrarBuscar = false;
@@ -124,7 +125,7 @@ export default {
           },
          signatureMD5( ) {
             let valorPIN = parseInt(this.formUser.valor_pagar.replace(/\./g, '') ) ;
-            let signature = process.env.SIGNATURE + this.formUser.nro_identif +"~" + valorPIN+  "~COP"; 
+            let signature = process.env.SIGNATURE + this.formUser.referenceCode +"~" + valorPIN+  "~COP"; 
             return md5( signature);         
           },
 
